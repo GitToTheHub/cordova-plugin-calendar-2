@@ -1,6 +1,6 @@
 # Cordova Calendar Plugin
 
-This is a fork of the [Calendar-PhoneGap-Plugin](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin) by [EddyVerbruggen](https://github.com/EddyVerbruggen) which will continue the support of this plugin to community.
+This is a fork of the [Calendar-PhoneGap-Plugin](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin) by [EddyVerbruggen](https://github.com/EddyVerbruggen), which will continue the support of this plugin to the community.
 
 If you like, you can support me on my [GitHub Sponsor page](https://github.com/sponsors/GitToTheHub).
 
