@@ -1,21 +1,8 @@
-# PhoneGap Calendar plugin
+# Cordova Calendar Plugin
 
-[![NPM version][npm-image]][npm-url]
-[![Downloads][downloads-image]][npm-url]
-[![TotalDownloads][total-downloads-image]][npm-url]
-[![Twitter Follow][twitter-image]][twitter-url]
+This is a fork of the [Calendar-PhoneGap-Plugin](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin) by [EddyVerbruggen](https://github.com/EddyVerbruggen) which will continue the support of this plugin to community.
 
-[npm-image]:http://img.shields.io/npm/v/cordova-plugin-calendar.svg
-[npm-url]:https://npmjs.org/package/cordova-plugin-calendar
-[downloads-image]:http://img.shields.io/npm/dm/cordova-plugin-calendar.svg
-[total-downloads-image]:http://img.shields.io/npm/dt/cordova-plugin-calendar.svg?label=total%20downloads
-[twitter-image]:https://img.shields.io/twitter/follow/eddyverbruggen.svg?style=social&label=Follow%20me
-[twitter-url]:https://twitter.com/eddyverbruggen
-
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=eddyverbruggen%40gmail%2ecom&lc=US&item_name=cordova%2dplugin%2dcalendar&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
-Every now and then kind folks ask me how they can give me all their money.
-Of course I'm happy to receive any amount but I'm just as happy if you simply 'star' this project.
+If you like, you can support me on my [GitHub Sponsor page](https://github.com/sponsors/GitToTheHub).
 
 1. [Description](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#1-description)
 2. [Installation](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#2-installation)

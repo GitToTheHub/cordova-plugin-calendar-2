@@ -1,4 +1,9 @@
 demo/platforms
 demo/plugins
 *.ipr
+
+# Android Studio
 .idea/
+
+# macOS
+.DS_Store
