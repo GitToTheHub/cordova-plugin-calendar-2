@@ -6,9 +6,8 @@ If you like, you can support me on my [GitHub Sponsor page](https://github.com/s
 
 1. [Description](#1-description)
 2. [Installation](#2-installation)
-	2. [Automatically](#automatically)
+	1. [Automatically](#automatically)
 	2. [Manually](#manually)
-	2. [PhoneGap Build](#phonegap-build)
 3. [Usage](#3-usage)
 4. [Promises](#4-promises)
 5. [Credits](#5-credits)
@@ -99,19 +98,6 @@ Then create a package called `accessor` and copy other 3 java Classes into it.
 
 Note that if you don't want your app to ask for these permissions, you can leave them out, but you'll only be able to
 use one function of this plugin: `createEventInteractively`.
-
-
-### PhoneGap Build
-
-Add the following xml to your `config.xml` to always use the latest npm version of this plugin:
-```xml
-<plugin name="cordova-plugin-calendar" />
-```
-
-Also, make sure you're building with Gradle by adding this to your `config.xml` file:
-```xml
-<preference name="android-build-tool" value="gradle" />
-```
 
 ## 3. Usage
 
