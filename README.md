@@ -78,6 +78,7 @@ Basic operations, you'll want to copy-paste this for testing purposes:
   window.plugins.calendar.createCalendar(calendarName,success,error);
   // if you want to create a calendar with a specific color, pass in a JS object like this:
   var createCalOptions = window.plugins.calendar.getCreateCalendarOptions();
+  createCalOptions.accountName = "My Account name"; // optional, will be your app name if omitted
   createCalOptions.calendarName = "My Cal Name";
   createCalOptions.calendarColor = "#FF0000"; // an optional hex color (with the # char), default is null, so the OS picks a color
   window.plugins.calendar.createCalendar(createCalOptions,success,error);

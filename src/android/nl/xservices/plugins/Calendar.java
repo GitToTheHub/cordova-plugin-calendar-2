@@ -6,11 +6,13 @@ import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.CalendarContract;
+import android.provider.CalendarContract.Events;
 import android.util.Log;
 import nl.xservices.plugins.accessor.AbstractCalendarAccessor;
 import nl.xservices.plugins.accessor.CalendarProviderAccessor;
@@ -283,7 +285,7 @@ public class Calendar extends CordovaPlugin {
     });
   }
 
-  private void createCalendar(JSONArray args) {
+  private void createCalendar(final JSONArray args) {
     if (args.length() == 0) {
       System.err.println("Exception: No Arguments passed");
       return;
@@ -294,26 +296,31 @@ public class Calendar extends CordovaPlugin {
       return;
     }
 
-    try {
-      final JSONObject jsonFilter = args.getJSONObject(0);
-      final String calendarColor = getPossibleNullString("calendarColor", jsonFilter);
-      final String calendarName = getPossibleNullString("calendarName", jsonFilter);
-      if (calendarName == null) {
-        callback.error("calendarName is mandatory");
-        return;
-      }
+    cordova.getThreadPool().execute(new Runnable() {
+      @Override
+      public void run() {
+        try {
+          JSONObject json = args.getJSONObject(0);
+          String calendarName = getPossibleNullString("calendarName", json);
 
-      cordova.getThreadPool().execute(new Runnable() {
-        @Override
-        public void run() {
-          String createdId = getCalendarAccessor().createCalendar(calendarName, calendarColor);
+          if (calendarName == null) {
+            callback.error("calendarName is mandatory");
+            return;
+          }
+
+          String calendarColor = getPossibleNullString("calendarColor", json);
+          String accountName = getPossibleNullString("accountName", json);
+          // Set application name as accountName if not provided
+          if (accountName == null) accountName = getApplicationName();
+
+          String createdId = getCalendarAccessor().createCalendar(accountName, calendarName, calendarColor);
           callback.sendPluginResult(new PluginResult(PluginResult.Status.OK, createdId));
+        } catch (JSONException e) {
+          System.err.println("Exception: " + e.getMessage());
+          callback.error(e.getMessage());
         }
-      });
-    } catch (JSONException e) {
-      System.err.println("Exception: " + e.getMessage());
-      callback.error(e.getMessage());
-    }
+      }
+    });
   }
 
   private void deleteCalendar(JSONArray args) {
@@ -594,8 +601,11 @@ public class Calendar extends CordovaPlugin {
     }
   }
 
-  private static String getPossibleNullString(String param, JSONObject from) {
-    return from.isNull(param) || "null".equals(from.optString(param)) ? null : from.optString(param);
+  /**
+   * Returns null if the param is null or "null", otherwise returns the param.
+   */
+  private static String getPossibleNullString(String param, JSONObject json) {
+    return json.isNull(param) || "null".equals(json.optString(param)) ? null : json.optString(param);
   }
 
   private void listEventsInRange(JSONArray args) {
@@ -713,5 +723,11 @@ public class Calendar extends CordovaPlugin {
     final SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd'T'HHmmss'Z'");
     sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
     return sdf.format(date);
+  }
+
+  public String getApplicationName() {
+    ApplicationInfo applicationInfo = cordova.getActivity().getApplicationInfo();
+    int stringId = applicationInfo.labelRes;
+    return stringId == 0 ? applicationInfo.nonLocalizedLabel.toString() : cordova.getActivity().getString(stringId);
   }
 }
