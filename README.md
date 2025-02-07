@@ -6,8 +6,6 @@ If you like, you can support me on my [GitHub Sponsor page](https://github.com/s
 
 1. [Description](#1-description)
 2. [Installation](#2-installation)
-	1. [Automatically](#automatically)
-	2. [Manually](#manually)
 3. [Usage](#3-usage)
 4. [Promises](#4-promises)
 5. [Credits](#5-credits)
@@ -36,68 +34,11 @@ cordova plugin add cordova-plugin-calendar --variable CALENDAR_USAGE_DESCRIPTION
 
 ## 2. Installation
 
-### Automatically
-Latest release on npm:
+Latest version from GitHub:
+
 ```
-$ cordova plugin add cordova-plugin-calendar
+$ cordova plugin add https://github.com/GitToTheHub/cordova-plugin-calendar
 ```
-
-Bleeding edge, from github:
-```
-$ cordova plugin add https://github.com/GitToTheHub/cordova-plugin-calendar.git
-```
-
-### Manually
-
-#### iOS
-
-1\. Add the following xml to your `config.xml`:
-```xml
-<!-- for iOS -->
-<feature name="Calendar">
-	<param name="ios-package" value="Calendar" />
-</feature>
-```
-
-2\. Grab a copy of Calendar.js, add it to your project and reference it in `index.html`:
-```html
-<script type="text/javascript" src="js/Calendar.js"></script>
-```
-
-3\. Download the source files for iOS and copy them to your project.
-
-Copy `Calendar.h` and `Calendar.m` to `platforms/ios/<ProjectName>/Plugins`
-
-4\. Click your project in XCode, Build Phases, Link Binary With Libraries, search for and add `EventKit.framework` and `EventKitUI.framework`.
-
-#### Android
-
-1\. Add the following xml to your `config.xml`:
-```xml
-<!-- for Android -->
-<feature name="Calendar">
-  <param name="android-package" value="nl.xservices.plugins.Calendar" />
-</feature>
-```
-
-2\. Grab a copy of Calendar.js, add it to your project and reference it in `index.html`:
-```html
-<script type="text/javascript" src="js/Calendar.js"></script>
-```
-
-3\. Download the source files for Android and copy them to your project.
-
-Android: Copy `Calendar.java` to `platforms/android/src/nl/xservices/plugins` (create the folders/packages).
-Then create a package called `accessor` and copy other 3 java Classes into it.
-
-4\. Add these permissions to your AndroidManifest.xml:
-```xml
-<uses-permission android:name="android.permission.READ_CALENDAR"/>
-<uses-permission android:name="android.permission.WRITE_CALENDAR"/>
-```
-
-Note that if you don't want your app to ask for these permissions, you can leave them out, but you'll only be able to
-use one function of this plugin: `createEventInteractively`.
 
 ## 3. Usage
 
