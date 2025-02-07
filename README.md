@@ -29,9 +29,6 @@ cordova plugin add cordova-plugin-calendar --variable CALENDAR_USAGE_DESCRIPTION
 * Supported methods on Android 4: `find`, `create` (silent and interactive), `delete`, ..
 * Supported methods on Android 2 and 3: `create` interactive only: the user is presented a prefilled Calendar event. Pressing the hardware back button will give control back to your app.
 
-### Windows 10 Mobile
-* Supported methods: `createEvent`, `createEventWithOptions`, `createEventInteractively`, `createEventInteractivelyWithOptions` only interactively
-
 ## 2. Installation
 
 Latest version from GitHub:
@@ -44,28 +41,27 @@ $ cordova plugin add https://github.com/GitToTheHub/cordova-plugin-calendar
 
 The table gives an overview of basic operation compatibility:
 
-Operation                           | Comment     | iOS | Android | Windows |
------------------------------------ | ----------- | --- | ------- | ------- |
-createCalendar                      |             | yes | yes     |         |
-deleteCalendar                      |             | yes | yes     |         |
-createEvent                         | silent      | yes | yes *   | yes **  |
-createEventWithOptions              | silent      | yes | yes *   | yes **  |
-createEventInteractively            | interactive | yes | yes     | yes **  |
-createEventInteractivelyWithOptions | interactive | yes | yes     | yes **  |
-findEvent                           |             | yes | yes     |         |
-findEventWithOptions                |             | yes | yes     |         |
-listEventsInRange                   |             | yes | yes     |         |
-listCalendars                       |             | yes | yes     |         |
-findAllEventsInNamedCalendars       |             | yes |         |         |
-modifyEvent                         |             | yes |         |         |
-modifyEventWithOptions              |             | yes |         |         |
-deleteEvent                         |             | yes | yes     |         |
-deleteEventFromNamedCalendar        |             | yes |         |         |
-deleteEventById                     |             | yes | yes     |         |
-openCalendar                        |             | yes | yes     |         |
+Operation                           | Comment     | iOS | Android |
+----------------------------------- | ----------- | --- | ------- |
+createCalendar                      |             | yes | yes     |
+deleteCalendar                      |             | yes | yes     |
+createEvent                         | silent      | yes | yes *   |
+createEventWithOptions              | silent      | yes | yes *   |
+createEventInteractively            | interactive | yes | yes     |
+createEventInteractivelyWithOptions | interactive | yes | yes     |
+findEvent                           |             | yes | yes     |
+findEventWithOptions                |             | yes | yes     |
+listEventsInRange                   |             | yes | yes     |
+listCalendars                       |             | yes | yes     |
+findAllEventsInNamedCalendars       |             | yes |         |
+modifyEvent                         |             | yes |         |
+modifyEventWithOptions              |             | yes |         |
+deleteEvent                         |             | yes | yes     |
+deleteEventFromNamedCalendar        |             | yes |         |
+deleteEventById                     |             | yes | yes     |
+openCalendar                        |             | yes | yes     |
 
 * \* on Android < 4 dialog is shown
-* \** only interactively on windows mobile
 
 Basic operations, you'll want to copy-paste this for testing purposes:
 ```js
