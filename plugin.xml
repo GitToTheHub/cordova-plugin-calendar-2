@@ -17,9 +17,9 @@
 
   <keywords>Calendar, Agenda, Event</keywords>
 
-  <repo>https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git</repo>
+  <repo>https://github.com/GitToTheHub/cordova-plugin-calendar.git</repo>
 
-  <issue>https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin/issues</issue>
+  <issue>https://github.com/GitToTheHub/cordova-plugin-calendar/issues</issue>
 
   <engines>
       <engine name="cordova-android" version=">=6.3.0" />

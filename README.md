@@ -4,24 +4,19 @@ This is a fork of the [Calendar-PhoneGap-Plugin](https://github.com/EddyVerbrugg
 
 If you like, you can support me on my [GitHub Sponsor page](https://github.com/sponsors/GitToTheHub).
 
-1. [Description](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#1-description)
-2. [Installation](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#2-installation)
-	2. [Automatically](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#automatically)
-	2. [Manually](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#manually)
-	2. [PhoneGap Build](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#phonegap-build)
-3. [Usage](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#3-usage)
-4. [Promises](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#4-promises)
-5. [Credits](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#5-credits)
-6. [License](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#6-license)
+1. [Description](#1-description)
+2. [Installation](#2-installation)
+	2. [Automatically](#automatically)
+	2. [Manually](#manually)
+	2. [PhoneGap Build](#phonegap-build)
+3. [Usage](#3-usage)
+4. [Promises](#4-promises)
+5. [Credits](#5-credits)
+6. [License](#6-license)
 
 ## 1. Description
 
 This plugin allows you to add events to the Calendar of the mobile device.
-
-* Works with PhoneGap >= 3.0.
-* For PhoneGap 2.x, see [the pre-3.0 branch](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin/tree/pre-3.0).
-* Compatible with [Cordova Plugman](https://github.com/apache/cordova-plugman).
-* [Officially supported by PhoneGap Build](https://build.phonegap.com/plugins).
 
 ### iOS specifics
 * Supported methods: `find`, `create`, `modify`, `delete`, ..
@@ -50,7 +45,7 @@ $ cordova plugin add cordova-plugin-calendar
 
 Bleeding edge, from github:
 ```
-$ cordova plugin add https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
+$ cordova plugin add https://github.com/GitToTheHub/cordova-plugin-calendar.git
 ```
 
 ### Manually

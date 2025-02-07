@@ -7,7 +7,7 @@ var startDate = new Date();
 var endDate = new Date();
 var calendarName = 'MyCal';
 var options = {
-  url: 'https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin',
+  url: 'https://github.com/GitToTheHub/cordova-plugin-calendar',
   calendarName: calendarName, // iOS specific
   calendarId: 1 // Android specific
 };
