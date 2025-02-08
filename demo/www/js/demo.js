@@ -7,7 +7,7 @@ var startDate = new Date();
 var endDate = new Date();
 var calendarName = 'MyCal';
 var options = {
-  url: 'https://github.com/GitToTheHub/cordova-plugin-calendar-native',
+  url: 'https://github.com/GitToTheHub/cordova-plugin-calendar-2',
   calendarName: calendarName, // iOS specific
   calendarId: 1 // Android specific
 };

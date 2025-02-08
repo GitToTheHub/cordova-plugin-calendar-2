@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-calendar-native-tests",
+  "name": "cordova-plugin-calendar-2-tests",
   "version": "5.0.0",
   "description": "",
   "cordova": {
-    "id": "cordova-plugin-calendar-native-tests",
+    "id": "cordova-plugin-calendar-2-tests",
     "platforms": []
   },
   "keywords": [

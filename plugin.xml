@@ -2,7 +2,7 @@
 <plugin
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-calendar-native"
+    id="cordova-plugin-calendar-2"
     version="5.1.7-dev">
 
   <name>Calendar</name>
@@ -17,9 +17,9 @@
 
   <keywords>Calendar, Agenda, Event</keywords>
 
-  <repo>https://github.com/GitToTheHub/cordova-plugin-calendar-native.git</repo>
+  <repo>https://github.com/GitToTheHub/cordova-plugin-calendar-2.git</repo>
 
-  <issue>https://github.com/GitToTheHub/cordova-plugin-calendar-native/issues</issue>
+  <issue>https://github.com/GitToTheHub/cordova-plugin-calendar-2/issues</issue>
 
   <engines>
       <engine name="cordova-android" version=">=6.3.0" />

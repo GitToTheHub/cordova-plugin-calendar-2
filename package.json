@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-calendar-native",
+  "name": "cordova-plugin-calendar-2",
   "version": "5.1.7-dev",
   "description": "This plugin allows you to manipulate the native calendar.",
   "cordova": {
-    "id": "cordova-plugin-calendar-native",
+    "id": "cordova-plugin-calendar-2",
     "platforms": [
       "ios",
       "android"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GitToTheHub/cordova-plugin-calendar-native.git"
+    "url": "git+https://github.com/GitToTheHub/cordova-plugin-calendar-2.git"
   },
   "keywords": [
     "Calendar",
@@ -31,7 +31,7 @@
   "author": "Eddy Verbruggen <eddyverbruggen@gmail.com> (https://github.com/EddyVerbruggen)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GitToTheHub/cordova-plugin-calendar-native/issues"
+    "url": "https://github.com/GitToTheHub/cordova-plugin-calendar-2/issues"
   },
-  "homepage": "https://github.com/GitToTheHub/cordova-plugin-calendar-native#readme"
+  "homepage": "https://github.com/GitToTheHub/cordova-plugin-calendar-2#readme"
 }
