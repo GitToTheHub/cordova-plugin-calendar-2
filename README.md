@@ -22,7 +22,7 @@ This plugin allows you to add events to the Calendar of the mobile device.
 * On iOS 10+ you need to provide a reason to the user for Calendar access. This plugin adds an empty `NSCalendarsUsageDescription` key to the /platforms/ios/*-Info.plist file which you can override with your custom string. To do so, pass the following variable when installing the plugin:
 
 ```
-cordova plugin add cordova-plugin-calendar-2 --variable CALENDAR_USAGE_DESCRIPTION="This app uses your calendar"
+cordova plugin add https://github.com/GitToTheHub/cordova-plugin-calendar-2 --variable CALENDAR_USAGE_DESCRIPTION="This app uses your calendar"
 ```
 
 ### Android specifics
