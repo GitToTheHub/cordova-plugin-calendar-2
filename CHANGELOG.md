@@ -1,6 +1,6 @@
 # Changelog
 
-## Version 5.1.7-dev
+## Version 5.1.7 (29.06.2025)
 
 ### Android
 - Account name can be set in the createCalendarOptions. If not set, the app name will used as account name.
