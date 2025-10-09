@@ -4,6 +4,7 @@ function Calendar() {
 
 Calendar.prototype.getCreateCalendarOptions = function () {
   return {
+    accountName: null, // Android only, the account name to create the calendar under
     calendarName: null,
     calendarColor: null // optional, the OS will choose one if left empty, example: pass "#FF0000" for red
   };
@@ -79,6 +80,7 @@ Calendar.prototype.getCalendarOptions = function () {
     recurrenceByMonthDay: null,
     recurrenceEndDate: null,
     recurrenceCount: null,
+    accountName: null, // Android only, the account name to create the event under
     calendarName: null,
     calendarId: null,
     url: null
