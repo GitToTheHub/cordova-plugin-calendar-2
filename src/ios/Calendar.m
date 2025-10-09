@@ -548,8 +548,8 @@
       CDVPluginResult *pluginResult = nil;
 
       NSArray *calendarArray = nil;
-      NSPredicate *fetchCalendarEvents = [eventStore predicateForEventsWithStartDate:startDate endDate:endDate calendars:calendarArray];
-      NSArray *matchingEvents = [eventStore eventsMatchingPredicate:fetchCalendarEvents];
+    NSPredicate *fetchCalendarEvents = [self->eventStore predicateForEventsWithStartDate:startDate endDate:endDate calendars:calendarArray];
+    NSArray *matchingEvents = [self->eventStore eventsMatchingPredicate:fetchCalendarEvents];
       NSMutableArray * eventsDataArray = [self eventsToDataArray:matchingEvents];
 
       pluginResult = [CDVPluginResult resultWithStatus: CDVCommandStatus_OK messageAsArray:eventsDataArray];
@@ -821,7 +821,7 @@
   [self.commandDelegate runInBackground: ^{
 
     // Get original instance
-    EKEvent* firstEvent = (EKEvent *)[eventStore eventWithIdentifier:ciid];
+    EKEvent* firstEvent = (EKEvent *)[self->eventStore eventWithIdentifier:ciid];
     if (firstEvent == nil) {
       // Fail
       [self.commandDelegate
@@ -833,7 +833,7 @@
       if (fromTime != nil && fromTime != (id)NSNull.null) {
         // Find target instance
         NSDate* fromDate = [NSDate dateWithTimeIntervalSince1970:(fromTime.doubleValue / 1000)]; // strip millis
-        NSArray<EKEvent*>* toDelete = [eventStore eventsMatchingPredicate:[eventStore predicateForEventsWithStartDate:fromDate endDate:NSDate.distantFuture calendars:@[firstEvent.calendar]]];
+        NSArray<EKEvent*>* toDelete = [self->eventStore eventsMatchingPredicate:[self->eventStore predicateForEventsWithStartDate:fromDate endDate:NSDate.distantFuture calendars:@[firstEvent.calendar]]];
         if (toDelete.count < 1) {
           // Nothing to delete
           [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_OK] callbackId:command.callbackId];
@@ -848,7 +848,7 @@
 
       // Delete
       NSError *error = nil;
-      [eventStore removeEvent:instance span:EKSpanFutureEvents error:&error];
+      [self->eventStore removeEvent:instance span:EKSpanFutureEvents error:&error];
       if (error != nil) {
         // Fail
         [self.commandDelegate
@@ -1015,7 +1015,7 @@
       pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_NO_RESULT];
     } else {
       NSError *error;
-      [eventStore removeCalendar:thisCalendar commit:YES error:&error];
+      [self->eventStore removeCalendar:thisCalendar commit:YES error:&error];
 
       if (error) {
         NSLog(@"Error in deleteCalendar: %@", error.localizedDescription);
