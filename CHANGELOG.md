@@ -2,6 +2,22 @@
 
 ## Version 5.1.8-dev
 
+### Android
+- Calendar.js: Add default `accountName` to `getCreateCalendarOptions` and `getCalendarOptions`
+
+### iOS
+- Readme: Document `Contacts usage description`
+- Fix XCode warnigns:
+  - Set defaults for `CALENDAR_USAGE_DESCRIPTION` and `CONTACTS_USAGE_DESCRIPTION` if you didn't set something when adding the plugin.
+    - XCode would otherwise complain about an empty calendar or contacts usage description
+  - Calendar.m: Use `[UIApplication openURL:options:completionHandler:]` in `openCalendar`.
+    - `[UIApplication openURL:]` was used before and is deprecated since iOS 10
+  - Calendar.m: Use `self->` for `eventStore` in background thread
+    - Fixes warning: `Block implicitly retains 'self'; explicitly mention 'self' to indicate this is intended behavior`
+
+### Common
+- Readme: Cleanup formatting and code examples
+
 ## Version 5.1.7 (29.06.2025)
 
 ### Android
