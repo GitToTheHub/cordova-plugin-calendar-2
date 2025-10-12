@@ -1,6 +1,6 @@
 # Changelog
 
-## Version 5.1.8-dev
+## Version 5.1.8 (12.10.2025)
 
 ### Android
 - Calendar.js: Add default `accountName` to `getCreateCalendarOptions` and `getCalendarOptions`
