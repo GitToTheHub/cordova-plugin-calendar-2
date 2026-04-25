@@ -1,6 +1,9 @@
 # Changelog
 
-## Version 5.2.0-dev
+## Version 5.2.0 (25.04.2026)
+
+- chore: Rename plugin from `cordova-plugin-calendar-2` to `cordova-plugin-calendar-continued`
+  - @ipunkvizard already put this plugin to npm under `cordova-plugin-calendar2` why I couldn't publish it as `cordova-plugin-calendar-2`. So I had to rename it.
 
 ## Version 5.1.9 (25.04.2026)
 

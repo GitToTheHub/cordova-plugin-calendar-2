@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-calendar-continued",
-  "version": "5.2.0-dev",
+  "version": "5.2.0",
   "description": "This plugin allows you to manipulate the native calendar.",
   "cordova": {
     "id": "cordova-plugin-calendar-continued",
