@@ -1,5 +1,7 @@
 # Changelog
 
+## Version 5.2.0-dev
+
 ## Version 5.1.9 (25.04.2026)
 
 - Release for NPM
