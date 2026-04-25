@@ -1,3 +1,3 @@
 cordova platform add android
 cordova platform add ios
-cordova plugin add cordova-plugin-calendar-2
+cordova plugin add cordova-plugin-calendar-continued
