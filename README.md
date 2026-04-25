@@ -24,14 +24,14 @@ This plugin allows you to add events to the Calendar of the mobile device.
 You need to provide a reason to the user for Calendar access. This plugin adds the key `NSCalendarsUsageDescription` to your App's Info.plist with the default text `This app uses your calendar`, which you can override with the preference key `CALENDAR_USAGE_DESCRIPTION`. To do so, pass the following variable when installing the plugin:
 
 ```bash
-cordova plugin add https://github.com/GitToTheHub/cordova-plugin-calendar-2 --variable CALENDAR_USAGE_DESCRIPTION="My custom calendar usage reason"
+cordova plugin add cordova-plugin-calendar-2 --variable CALENDAR_USAGE_DESCRIPTION="My custom calendar usage reason"
 ```
 
 #### Contacts usage description
 You need to provide a reason to the user for contacts access. This is needed in some iOS versions when searching for locations and invitees using the interactive mode like `createEventInteractively`. This plugin adds the key `NSContactsUsageDescription` to your App's Info.plist with the defaul text `This app uses contacts when searching for locations and invitees when using the calendar functionality`, which you can override with the preference key `CONTACTS_USAGE_DESCRIPTION`. To do so, pass the following variable when installing the plugin:
 
 ```bash
-cordova plugin add https://github.com/GitToTheHub/cordova-plugin-calendar-2 --variable CONTACTS_USAGE_DESCRIPTION="My custom contacts usage reason"
+cordova plugin add cordova-plugin-calendar-2 --variable CONTACTS_USAGE_DESCRIPTION="My custom contacts usage reason"
 ```
 
 ### Android specifics
