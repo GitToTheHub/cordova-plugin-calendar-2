@@ -1,5 +1,7 @@
 # Changelog
 
+## Version 5.2.1-dev
+
 ## Version 5.2.0 (25.04.2026)
 
 - chore: Rename plugin from `cordova-plugin-calendar-2` to `cordova-plugin-calendar-continued`
