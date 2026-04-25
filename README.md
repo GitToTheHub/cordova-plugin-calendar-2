@@ -1,4 +1,7 @@
-# Cordova Calendar Plugin 5.1.9-dev
+# cordova-plugin-calendar-2
+
+[![npm - Latest](https://img.shields.io/npm/v/cordova-plugin-calendar-2/latest?label=Latest%20Release%20(npm))](https://npmjs.com/package/cordova-plugin-calendar-2)
+[![GitHub](https://img.shields.io/github/package-json/v/GitToTheHub/cordova-plugin-calendar-2?label=Development%20(Git))](https://github.com/GitToTheHub/cordova-plugin-calendar-2)
 
 This is a fork of the [Calendar-PhoneGap-Plugin](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin) by [EddyVerbruggen](https://github.com/EddyVerbruggen), which will continue the support of this plugin to the community.
 
