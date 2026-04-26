@@ -3,6 +3,9 @@
 [![npm - Latest](https://img.shields.io/npm/v/cordova-plugin-calendar-continued/latest?label=Latest%20Release%20(npm))](https://npmjs.com/package/cordova-plugin-calendar-continued)
 [![GitHub](https://img.shields.io/github/package-json/v/gittothehub/cordova-plugin-calendar-continued?label=Development%20(Git))](https://github.com/GitToTheHub/cordova-plugin-calendar-continued)
 
+> [!NOTE]
+> This repository was renamed on 25th April 2026 from `cordova-plugin-calendar-2` to `cordova-plugin-calendar-continued`, because someone published this fork on NPM under `cordova-plugin-calendar2`, because I hadn't it be done before. This fork is now published under `cordova-plugin-calendar-continued` on NPM.
+
 This is a fork of the [Calendar-PhoneGap-Plugin](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin) by [EddyVerbruggen](https://github.com/EddyVerbruggen), which will continue the support of this plugin to the community.
 
 If you like, you can support me on my [GitHub Sponsor page](https://github.com/sponsors/GitToTheHub).
